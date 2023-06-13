@@ -1,0 +1,83 @@
+.menuItemContainer {
+	height: 3rem;
+	width: 97%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	align-items: center;
+	padding: 0 15px;
+	border-radius: var(--br-2);
+	margin-bottom: 1rem;
+
+	border-top-right-radius: 10rem;
+	border-bottom-right-radius: 10rem;
+	transition: all 0.2s linear;
+}
+@media (max-width: 48em) {
+	.menuItemContainer {
+		height: 4rem;
+	}
+}
+
+.selected {
+	background-color: var(--main-color);
+	/* transition: all 0.3s linear; */
+}
+.selected p {
+	color: var(--white);
+}
+
+.menuLeft {
+	width: auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+	padding: 0 1rem;
+	border-radius: var(--br-2);
+}
+.menuRight {
+	width: 3rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.iconContainer {
+	height: 1.5rem;
+}
+@media (max-width: 48em) {
+	.iconContainer {
+		height: 1.7rem;
+	}
+}
+
+.rotate {
+	transform: rotate(90deg);
+	/* transition: all 0.5s ease-out; */
+}
+.normal {
+	transform: rotate(0deg);
+	/* transition: all 0.5s ease-out; */
+}
+@media (min-width: 75em) {
+	.rotate {
+		transition: all 0.5s ease-out;
+	}
+	.normal {
+		transition: all 0.5s ease-out;
+	}
+}
+
+.active {
+	background-color: var(--color-secondary);
+}
+
+.active svg path {
+	fill: var(--white);
+}
+
+.active p {
+	color: var(--white);
+}

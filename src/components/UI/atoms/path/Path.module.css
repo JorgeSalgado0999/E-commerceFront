@@ -1,0 +1,12 @@
+.routeContainer {
+	list-style: none;
+	display: flex;
+	align-items: baseline;
+	gap: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.iconContainer {
+	height: 1rem;
+}

@@ -6,14 +6,12 @@ import {Routes, Route, Link, BrowserRouter} from "react-router-dom";
 // import "@/Global/css/GlobalStyles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./Global/css/GlobalStyles.css";
+import "./Global/css/flexboxgrid.css";
 import {Routing} from "./routes/Routing";
 
 function App() {
-	return (
-		<BrowserRouter>
-			<Routing />
-		</BrowserRouter>
-	);
+	return <Routing />;
 }
 
 export default App;
